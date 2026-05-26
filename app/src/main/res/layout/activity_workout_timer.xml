@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.WorkoutTimerActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header with back button -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:layout_marginTop="25dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_arrow_back"
+                android:padding="4dp"
+                android:layout_gravity="start" />
+
+
+        </FrameLayout>
+
+        <!-- Video Section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/action_video_bg"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="24dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ready to learn?"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Watch the full exercise demonstration with step-by-step instructions"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/watchNowButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WATCH NOW →"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_color"
+                    android:background="@drawable/watch_button_bg"
+                    android:padding="12dp"
+                    android:layout_marginStart="16dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Content sections -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp">
+
+            <!-- Description Section -->
+            <TextView
+                android:id="@+id/exerciseNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumping Jack"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/exerciseDifficultyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy | 390 Calories Burn"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/exerciseDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A jumping jack, also known as a star jump and a jumping jack, is a physical jumping exercise performed by jumping to a position with the legs spread wide."
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp" />
+
+
+            <!-- Timer Section -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="24dp"
+                android:paddingBottom="16dp"
+                android:gravity="center_horizontal">
+
+                <!-- Timer display -->
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/circle_stroke_background"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/timerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="00:30"
+                        android:textSize="36sp"
+                        android:textColor="#000000" />
+                </FrameLayout>
+
+                <!-- Inputs: Hours / Minutes / Seconds -->
+                <LinearLayout
+                    android:id="@+id/inputLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/editTextHours"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:hint="HH"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/editTextMinutes"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:hint="MM"
+                        android:inputType="number"
+                        android:layout_marginStart="8dp" />
+
+                    <EditText
+                        android:id="@+id/editTextSeconds"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:hint="SS"
+                        android:inputType="number"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+                <!-- Buttons: Start / Pause -->
+                <LinearLayout
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start" />
+
+                    <Button
+                        android:id="@+id/buttonPause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pause"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

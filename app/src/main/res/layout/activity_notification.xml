@@ -1,0 +1,17 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/white" tools:context=".activities.NotificationActivity" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <!--   Header with back and more options buttons   -->
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingTop="50dp" android:paddingEnd="16dp">
+            <!--   Back Button   -->
+            <ImageButton android:id="@+id/backButton" android:layout_width="32dp" android:layout_height="32dp" android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_arrow_back" android:padding="4dp" android:layout_gravity="start"/>
+            <!--   TextView for "Notification" in the center   -->
+            <TextView android:id="@+id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Notification" android:textColor="@android:color/black" android:textSize="20sp" android:textStyle="bold" android:layout_gravity="center"/>
+            <!--   More Options Button   -->
+            <ImageButton android:id="@+id/moreOptionsButton" android:layout_width="35dp" android:layout_height="35dp" android:background="@drawable/bg_circle_grey" android:src="@drawable/details" android:padding="8dp" android:layout_gravity="end"/>
+        </FrameLayout>
+        <!--   Top Divider Line Before List   -->
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#C0C0C0" android:layout_marginTop="20dp"/>
+        <!--   Dynamic Notification List Container   -->
+        <LinearLayout android:id="@+id/notificationListContainer" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp" android:paddingTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

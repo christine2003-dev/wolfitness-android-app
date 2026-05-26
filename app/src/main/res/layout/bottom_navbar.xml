@@ -1,0 +1,32 @@
+<!-- res/layout/bottom_navbar.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@drawable/navbar_background"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/nav_home"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        android:tint="@color/gray"/>
+
+    <ImageView
+        android:id="@+id/nav_workout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_dumbbell"
+        android:tint="@color/gray"/>
+
+    <ImageView
+        android:id="@+id/nav_profile"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_profile"
+        android:tint="@color/gray"/>
+</LinearLayout>

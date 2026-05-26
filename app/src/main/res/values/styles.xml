@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Date Picker Theme -->
+    <style name="DatePickerTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">#B768D4</item> <!-- Header color and selected day -->
+        <item name="android:headerBackground">#6B50F6</item> <!-- Header background -->
+        <item name="android:colorControlActivated">#B768D4</item> <!-- Selected day -->
+        <item name="android:textColorPrimary">#000000</item> <!-- Calendar date text color -->
+        <item name="android:textColorSecondary">#757575</item> <!-- Weekday header text color -->
+        <item name="android:buttonBarPositiveButtonStyle">@style/DatePickerButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerButtonStyle</item>
+    </style>
+
+    <style name="DatePickerButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#6B50F6</item>
+    </style>
+
+</resources>

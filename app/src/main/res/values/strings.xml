@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WolFitness</string>
+    <string name="back_button_description">Go back</string>
+    <string-array name="gender_array">
+    <item>Choose Gender</item>
+    <item>Male</item>
+    <item>Female</item>
+    </string-array>
+</resources>

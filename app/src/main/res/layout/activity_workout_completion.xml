@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/completion_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/workout_completion_image"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/congratulation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Congratulations, You Have Finished Your Workout"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/quote_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Exercises is king and nutrition is queen. Combine the two and you will have a kingdom"
+            android:textColor="#757575"
+            android:textSize="16sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/author_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="#757575"
+            android:textSize="16sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/back_to_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/gradient_button"
+            android:text="Back To Home"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

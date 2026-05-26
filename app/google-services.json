@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "129803376447",
+    "project_id": "wolfitness-5bd8a",
+    "storage_bucket": "wolfitness-5bd8a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129803376447:android:0dd1132cd0134cf590a58a",
+        "android_client_info": {
+          "package_name": "com.example.wolfitness"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdkJBJSI8hNYfbR6sEBl2Z0TfsM1Fgn1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
