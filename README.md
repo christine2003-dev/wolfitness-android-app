@@ -36,10 +36,16 @@ app/src/main/java/com/example/wolfitness/
 
 app/src/main/res/
   layout/           XML layouts for all screens and list items
-  drawable/         Icons, gradients, workout images, onboarding assets
+  drawable/         Icons, gradients, workout images, onboarding assets, and bundled exercise image fallbacks
   raw/              Workout completion sound
   values/           Strings, colors, themes, fonts
 ```
+
+Bundled exercise images are stored in `app/src/main/res/drawable/` and include `armraises.png`,
+`cobrastretch.png`, `inclinepushups.png`, `jump_rope.png`, `jumpingjack.png`, `pushups.png`,
+`restanddrink.png`, `skipping.png`, `squats.png`, and `warmup.png`. `WorkoutDetails1Activity`
+uses these local assets as placeholders/error images when Firestore exercise image URLs are missing
+or fail to load.
 
 ## App Architecture
 
